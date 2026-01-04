@@ -1,0 +1,99 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * AFED Dark Theme - Automated Fraud & Event Detection
+   * ALWAYS USE DARK MODE - all variables use dark theme values
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+  */
+  :root {
+    /* AFED Dark Theme - Primary color scheme (always applied) */
+    /* Core dark theme colors */
+    --background: 217 32% 18%;
+    --foreground: 210 40% 96%;
+
+    --card: 217 32% 22%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 217 32% 22%;
+    --popover-foreground: 210 40% 96%;
+
+    /* Bright teal/cyan for interactive elements and primary actions */
+    --primary: 188 100% 50%;
+    --primary-foreground: 217 32% 18%;
+
+    /* Softer blue-gray for secondary elements */
+    --secondary: 217 32% 28%;
+    --secondary-foreground: 210 40% 96%;
+
+    /* Muted colors for less important elements */
+    --muted: 217 32% 32%;
+    --muted-foreground: 210 16% 65%;
+
+    /* Teal accent for highlights and important information */
+    --accent: 188 81% 45%;
+    --accent-foreground: 217 32% 18%;
+
+    /* Red for high-risk alerts and destructive actions */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 96%;
+
+    --border: 217 32% 26%;
+    --input: 217 32% 22%;
+    --ring: 188 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors */
+    --sidebar-background: 217 32% 16%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 188 100% 50%;
+    --sidebar-primary-foreground: 217 32% 18%;
+    --sidebar-accent: 217 32% 30%;
+    --sidebar-accent-foreground: 188 81% 45%;
+    --sidebar-border: 217 32% 24%;
+    --sidebar-ring: 188 100% 50%;
+
+    /* AFED specific colors */
+    --risk-high: 0 100% 50%;
+    --risk-medium: 38 92% 50%;
+    --risk-low: 120 100% 35%;
+    --alert-amber: 38 92% 50%;
+
+    /* Dark pink accents for brand personality */
+    --dark-pink: 330 100% 45%;
+    --dark-pink-light: 330 85% 55%;
+  }
+}
+
+@layer base {
+  /* Always use dark theme for AFED */
+  html {
+    color-scheme: dark;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
