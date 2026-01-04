@@ -1,4 +1,5 @@
 📁 AFED – Automated Fraud & Event Detection
+
 🔐 AI-Powered Real-Time Fraud & Anomaly Detection System
 
 AFED (Automated Fraud & Event Detection) is a machine learning–based web application designed to automatically detect fraudulent activities and suspicious events from large-scale digital data such as transactions, user behavior, and system logs. The system leverages unsupervised anomaly detection techniques to identify deviations from normal behavior in real time and present them through an intuitive dashboard.
