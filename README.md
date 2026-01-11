@@ -48,21 +48,6 @@ REST APIs for frontend–backend communication
 
 Secure backend services for data ingestion and ML inference
 
-Project Structure
-AFED/
-├── data/
-│   ├── afed_normal_transactions.csv
-│   ├── afed_test_transactions.csv
-│   └── afed_vendor_master.csv
-│
-├── notebooks/
-│   └── afed_anomaly_detection_demo.ipynb
-│
-├── frontend/
-│   └── dashboard_prototype/
-│
-├── README.md
-
 Data
 
 The datasets included in this repository are synthetic and created for demonstration purposes.
